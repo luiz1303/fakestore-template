@@ -1,0 +1,32 @@
+.skeleton-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  row-gap: 2rem;
+}
+
+.skeleton-loader {
+  width: 30rem;
+  height: 14rem;
+  border-radius: 1.5rem;
+  background-color: rgba(0, 0, 0, 0.1);
+  animation-name: skeleton-anim;
+  animation-timing-function: linear;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes skeleton-anim {
+  0% {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+  50% {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  100% {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+}
